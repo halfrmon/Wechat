@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/main.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/main.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/main.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/VerifyGrpcClient.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/VerifyGrpcClient.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/LogicSystem.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/LogicSystem.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/LogicSystem.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/ConfigMgr.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/ConfigMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/ConfigMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/CServer.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/CServer.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/CServer.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/HttpConnection.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/AsioIOServicePool.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/AsioIOServicePool.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/RedisMgr.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/RedisMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/RedisMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/message.pb.cc.o -c /home/chen/AV_Development/5.29Project/GateServer/message.pb.cc",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/message.pb.cc"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -c /home/chen/AV_Development/5.29Project/GateServer/message.grpc.pb.cc",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/message.grpc.pb.cc"
+}
+]

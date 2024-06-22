@@ -1,0 +1,3 @@
+/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles/GateServer.dir
+/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles/edit_cache.dir
+/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles/rebuild_cache.dir
