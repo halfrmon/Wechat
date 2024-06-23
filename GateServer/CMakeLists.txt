@@ -40,6 +40,14 @@ set(HIREDIS_INCLUDE_DIRS "/usr/include/hiredis")
 set(HIREDIS_LIBRARLIES "hiredis")
 include_directories(${HIREDIS_INCLUDE_DIRS})
 
+# 手动包含 MySQL 头文件目录
+# 查找 MySQL Connector/C++ 库
+include_directories(/usr/include/mysql /usr/include/cppconn)
+
+
+
+
+
 
 # 源文件列表
 set(SOURCES
@@ -48,10 +56,12 @@ set(SOURCES
     LogicSystem.cpp
     ConfigMgr.cpp
     CServer.cpp
-    HttpConnection.cpp
     VerifyGrpcClient.cpp
     AsioIOServicePool.cpp
     RedisMgr.cpp
+    MysqlMgr.cpp
+    MysqlDao.cpp
+    HttpConnection.cpp
     ${GENERATED_PROTO_FILES}
 )
 
@@ -64,9 +74,12 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # 链接库
 target_link_libraries(${PROJECT_NAME}
     ${Protobuf_LIBRARIES}
+    Boost::filesystem
     gRPC::grpc++
     ${Boost_LIBRARIES}
     ${CMAKE_THREAD_LIBS_INIT}
+    mysqlcppconn
+    
 )
 target_link_libraries(${PROJECT_NAME} ${JsonCpp_LIBRARIES} ${HIREDIS_LIBRARLIES})
 

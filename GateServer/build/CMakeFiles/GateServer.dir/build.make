@@ -139,24 +139,10 @@ CMakeFiles/GateServer.dir/CServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/CServer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/CServer.cpp -o CMakeFiles/GateServer.dir/CServer.cpp.s
 
-CMakeFiles/GateServer.dir/HttpConnection.cpp.o: CMakeFiles/GateServer.dir/flags.make
-CMakeFiles/GateServer.dir/HttpConnection.cpp.o: ../HttpConnection.cpp
-CMakeFiles/GateServer.dir/HttpConnection.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GateServer.dir/HttpConnection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/HttpConnection.cpp.o -MF CMakeFiles/GateServer.dir/HttpConnection.cpp.o.d -o CMakeFiles/GateServer.dir/HttpConnection.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp
-
-CMakeFiles/GateServer.dir/HttpConnection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/HttpConnection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp > CMakeFiles/GateServer.dir/HttpConnection.cpp.i
-
-CMakeFiles/GateServer.dir/HttpConnection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/HttpConnection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp -o CMakeFiles/GateServer.dir/HttpConnection.cpp.s
-
 CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o: ../AsioIOServicePool.cpp
 CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o -MF CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o.d -o CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/AsioIOServicePool.cpp
 
 CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.s: cmake_force
 CMakeFiles/GateServer.dir/RedisMgr.cpp.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/RedisMgr.cpp.o: ../RedisMgr.cpp
 CMakeFiles/GateServer.dir/RedisMgr.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GateServer.dir/RedisMgr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GateServer.dir/RedisMgr.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/RedisMgr.cpp.o -MF CMakeFiles/GateServer.dir/RedisMgr.cpp.o.d -o CMakeFiles/GateServer.dir/RedisMgr.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/RedisMgr.cpp
 
 CMakeFiles/GateServer.dir/RedisMgr.cpp.i: cmake_force
@@ -181,10 +167,52 @@ CMakeFiles/GateServer.dir/RedisMgr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/RedisMgr.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/RedisMgr.cpp -o CMakeFiles/GateServer.dir/RedisMgr.cpp.s
 
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.o: ../MysqlMgr.cpp
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GateServer.dir/MysqlMgr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/MysqlMgr.cpp.o -MF CMakeFiles/GateServer.dir/MysqlMgr.cpp.o.d -o CMakeFiles/GateServer.dir/MysqlMgr.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/MysqlMgr.cpp
+
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/MysqlMgr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chen/AV_Development/5.29Project/GateServer/MysqlMgr.cpp > CMakeFiles/GateServer.dir/MysqlMgr.cpp.i
+
+CMakeFiles/GateServer.dir/MysqlMgr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/MysqlMgr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/MysqlMgr.cpp -o CMakeFiles/GateServer.dir/MysqlMgr.cpp.s
+
+CMakeFiles/GateServer.dir/MysqlDao.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/MysqlDao.cpp.o: ../MysqlDao.cpp
+CMakeFiles/GateServer.dir/MysqlDao.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GateServer.dir/MysqlDao.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/MysqlDao.cpp.o -MF CMakeFiles/GateServer.dir/MysqlDao.cpp.o.d -o CMakeFiles/GateServer.dir/MysqlDao.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/MysqlDao.cpp
+
+CMakeFiles/GateServer.dir/MysqlDao.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/MysqlDao.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chen/AV_Development/5.29Project/GateServer/MysqlDao.cpp > CMakeFiles/GateServer.dir/MysqlDao.cpp.i
+
+CMakeFiles/GateServer.dir/MysqlDao.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/MysqlDao.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/MysqlDao.cpp -o CMakeFiles/GateServer.dir/MysqlDao.cpp.s
+
+CMakeFiles/GateServer.dir/HttpConnection.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/HttpConnection.cpp.o: ../HttpConnection.cpp
+CMakeFiles/GateServer.dir/HttpConnection.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GateServer.dir/HttpConnection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/HttpConnection.cpp.o -MF CMakeFiles/GateServer.dir/HttpConnection.cpp.o.d -o CMakeFiles/GateServer.dir/HttpConnection.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp
+
+CMakeFiles/GateServer.dir/HttpConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/HttpConnection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp > CMakeFiles/GateServer.dir/HttpConnection.cpp.i
+
+CMakeFiles/GateServer.dir/HttpConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/HttpConnection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp -o CMakeFiles/GateServer.dir/HttpConnection.cpp.s
+
 CMakeFiles/GateServer.dir/message.pb.cc.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/message.pb.cc.o: ../message.pb.cc
 CMakeFiles/GateServer.dir/message.pb.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GateServer.dir/message.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GateServer.dir/message.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.pb.cc.o -MF CMakeFiles/GateServer.dir/message.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.pb.cc.o -c /home/chen/AV_Development/5.29Project/GateServer/message.pb.cc
 
 CMakeFiles/GateServer.dir/message.pb.cc.i: cmake_force
@@ -198,7 +226,7 @@ CMakeFiles/GateServer.dir/message.pb.cc.s: cmake_force
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: ../message.grpc.pb.cc
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -MF CMakeFiles/GateServer.dir/message.grpc.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -c /home/chen/AV_Development/5.29Project/GateServer/message.grpc.pb.cc
 
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.i: cmake_force
@@ -216,9 +244,11 @@ GateServer_OBJECTS = \
 "CMakeFiles/GateServer.dir/LogicSystem.cpp.o" \
 "CMakeFiles/GateServer.dir/ConfigMgr.cpp.o" \
 "CMakeFiles/GateServer.dir/CServer.cpp.o" \
-"CMakeFiles/GateServer.dir/HttpConnection.cpp.o" \
 "CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o" \
 "CMakeFiles/GateServer.dir/RedisMgr.cpp.o" \
+"CMakeFiles/GateServer.dir/MysqlMgr.cpp.o" \
+"CMakeFiles/GateServer.dir/MysqlDao.cpp.o" \
+"CMakeFiles/GateServer.dir/HttpConnection.cpp.o" \
 "CMakeFiles/GateServer.dir/message.pb.cc.o" \
 "CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
 
@@ -230,15 +260,17 @@ GateServer: CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o
 GateServer: CMakeFiles/GateServer.dir/LogicSystem.cpp.o
 GateServer: CMakeFiles/GateServer.dir/ConfigMgr.cpp.o
 GateServer: CMakeFiles/GateServer.dir/CServer.cpp.o
-GateServer: CMakeFiles/GateServer.dir/HttpConnection.cpp.o
 GateServer: CMakeFiles/GateServer.dir/AsioIOServicePool.cpp.o
 GateServer: CMakeFiles/GateServer.dir/RedisMgr.cpp.o
+GateServer: CMakeFiles/GateServer.dir/MysqlMgr.cpp.o
+GateServer: CMakeFiles/GateServer.dir/MysqlDao.cpp.o
+GateServer: CMakeFiles/GateServer.dir/HttpConnection.cpp.o
 GateServer: CMakeFiles/GateServer.dir/message.pb.cc.o
 GateServer: CMakeFiles/GateServer.dir/message.grpc.pb.cc.o
 GateServer: CMakeFiles/GateServer.dir/build.make
 GateServer: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 GateServer: /usr/lib/libgrpc++.so.1.28.2
-GateServer: /usr/lib/libboost_filesystem.so.1.82.0
+GateServer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
 GateServer: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 GateServer: /usr/lib/libgrpc.so.9.0.0
 GateServer: /usr/lib/libssl.so
@@ -259,9 +291,8 @@ GateServer: /usr/lib/libabsl_bad_optional_access.so
 GateServer: /usr/lib/libabsl_raw_logging_internal.so
 GateServer: /usr/lib/libabsl_log_severity.so
 GateServer: /usr/lib/libupb.so.9.0.0
-GateServer: /usr/lib/libboost_atomic.so.1.82.0
 GateServer: CMakeFiles/GateServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable GateServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable GateServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GateServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

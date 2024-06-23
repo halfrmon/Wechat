@@ -169,16 +169,14 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/config/detail/posix_features.hpp \
  /usr/include/boost/config/detail/suffix.hpp \
  /usr/include/boost/config/helper_macros.hpp \
- /usr/include/boost/config/detail/cxx_composite.hpp \
  /usr/include/boost/optional/optional_fwd.hpp \
  /usr/include/boost/throw_exception.hpp \
- /usr/include/boost/exception/exception.hpp \
  /usr/include/boost/assert/source_location.hpp \
- /usr/include/boost/current_function.hpp \
- /usr/include/boost/config/workaround.hpp /usr/include/boost/cstdint.hpp \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/boost/current_function.hpp /usr/include/boost/cstdint.hpp \
+ /usr/include/boost/config/workaround.hpp \
+ /usr/include/boost/exception/exception.hpp \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/memory \
@@ -213,8 +211,6 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/version.hpp \
  /usr/include/boost/type_traits/integral_constant.hpp \
  /usr/include/boost/type_traits/conditional.hpp \
- /usr/include/boost/type_traits/conjunction.hpp \
- /usr/include/boost/type_traits/disjunction.hpp \
  /usr/include/boost/type_traits/has_nothrow_constructor.hpp \
  /usr/include/boost/type_traits/is_default_constructible.hpp \
  /usr/include/boost/type_traits/is_complete.hpp \
@@ -246,7 +242,6 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/type_traits/remove_extent.hpp \
  /usr/include/boost/type_traits/add_pointer.hpp \
  /usr/include/boost/type_traits/remove_cv.hpp \
- /usr/include/boost/type_traits/is_assignable.hpp \
  /usr/include/boost/type_traits/is_base_of.hpp \
  /usr/include/boost/type_traits/is_base_and_derived.hpp \
  /usr/include/boost/type_traits/is_same.hpp \
@@ -254,12 +249,9 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/type_traits/is_const.hpp \
  /usr/include/boost/type_traits/is_constructible.hpp \
  /usr/include/boost/type_traits/is_destructible.hpp \
- /usr/include/boost/type_traits/is_convertible.hpp \
- /usr/include/boost/type_traits/is_abstract.hpp \
- /usr/include/boost/type_traits/add_lvalue_reference.hpp \
- /usr/include/boost/type_traits/add_reference.hpp \
  /usr/include/boost/type_traits/is_nothrow_move_assignable.hpp \
  /usr/include/boost/type_traits/has_trivial_move_assign.hpp \
+ /usr/include/boost/type_traits/is_assignable.hpp \
  /usr/include/boost/type_traits/is_volatile.hpp \
  /usr/include/boost/type_traits/has_nothrow_assign.hpp \
  /usr/include/boost/type_traits/enable_if.hpp \
@@ -272,31 +264,66 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/move/detail/config_end.hpp \
  /usr/include/boost/move/detail/meta_utils.hpp \
  /usr/include/boost/move/detail/meta_utils_core.hpp \
- /usr/include/boost/move/detail/addressof.hpp \
  /usr/include/boost/move/traits.hpp \
  /usr/include/boost/move/detail/type_traits.hpp \
- /usr/include/c++/11/cassert /usr/include/boost/none.hpp \
- /usr/include/boost/none_t.hpp \
+ /usr/include/boost/none.hpp /usr/include/boost/none_t.hpp \
  /usr/include/boost/utility/compare_pointees.hpp \
  /usr/include/boost/utility/result_of.hpp \
+ /usr/include/boost/preprocessor/cat.hpp \
+ /usr/include/boost/preprocessor/config/config.hpp \
+ /usr/include/boost/preprocessor/iteration/iterate.hpp \
+ /usr/include/boost/preprocessor/arithmetic/dec.hpp \
+ /usr/include/boost/preprocessor/arithmetic/inc.hpp \
+ /usr/include/boost/preprocessor/array/elem.hpp \
+ /usr/include/boost/preprocessor/array/data.hpp \
+ /usr/include/boost/preprocessor/tuple/elem.hpp \
+ /usr/include/boost/preprocessor/facilities/expand.hpp \
+ /usr/include/boost/preprocessor/facilities/overload.hpp \
+ /usr/include/boost/preprocessor/variadic/size.hpp \
+ /usr/include/boost/preprocessor/tuple/rem.hpp \
+ /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
+ /usr/include/boost/preprocessor/variadic/elem.hpp \
+ /usr/include/boost/preprocessor/array/size.hpp \
+ /usr/include/boost/preprocessor/slot/slot.hpp \
+ /usr/include/boost/preprocessor/slot/detail/def.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_params.hpp \
+ /usr/include/boost/preprocessor/punctuation/comma_if.hpp \
+ /usr/include/boost/preprocessor/control/if.hpp \
+ /usr/include/boost/preprocessor/control/iif.hpp \
+ /usr/include/boost/preprocessor/logical/bool.hpp \
+ /usr/include/boost/preprocessor/facilities/empty.hpp \
+ /usr/include/boost/preprocessor/punctuation/comma.hpp \
+ /usr/include/boost/preprocessor/repetition/repeat.hpp \
+ /usr/include/boost/preprocessor/debug/error.hpp \
+ /usr/include/boost/preprocessor/detail/auto_rec.hpp \
+ /usr/include/boost/preprocessor/tuple/eat.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
+ /usr/include/boost/preprocessor/facilities/intercept.hpp \
  /usr/include/boost/type_traits/type_identity.hpp \
- /usr/include/boost/utility/detail/result_of_variadic.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
+ /usr/include/boost/preprocessor/slot/detail/shared.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
+ /usr/include/boost/utility/detail/result_of_iterate.hpp \
  /usr/include/boost/optional/detail/optional_config.hpp \
  /usr/include/boost/optional/detail/optional_factory_support.hpp \
  /usr/include/boost/optional/detail/optional_aligned_storage.hpp \
- /usr/include/boost/optional/detail/optional_hash.hpp \
  /usr/include/boost/optional/detail/optional_trivially_copyable_base.hpp \
  /usr/include/boost/optional/detail/optional_reference_spec.hpp \
  /usr/include/boost/optional/detail/optional_relops.hpp \
  /usr/include/boost/optional/detail/optional_swap.hpp \
  /usr/include/boost/property_tree/exceptions.hpp \
- /usr/include/boost/any.hpp /usr/include/boost/any/bad_any_cast.hpp \
- /usr/include/boost/any/fwd.hpp /usr/include/boost/type_index.hpp \
+ /usr/include/boost/any.hpp /usr/include/boost/type_index.hpp \
  /usr/include/boost/type_index/stl_type_index.hpp \
  /usr/include/boost/type_index/type_index_facade.hpp \
  /usr/include/boost/container_hash/hash_fwd.hpp \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/boost/core/demangle.hpp /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
+ /usr/include/boost/type_traits/add_reference.hpp \
+ /usr/include/boost/utility/enable_if.hpp \
  /usr/include/boost/property_tree/detail/exception_implementation.hpp \
  /usr/include/boost/property_tree/detail/ptree_utils.hpp \
  /usr/include/boost/limits.hpp /usr/include/c++/11/limits \
@@ -322,8 +349,6 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/mpl/aux_/config/nttp.hpp \
  /usr/include/boost/mpl/aux_/integral_wrapper.hpp \
  /usr/include/boost/mpl/aux_/static_cast.hpp \
- /usr/include/boost/preprocessor/cat.hpp \
- /usr/include/boost/preprocessor/config/config.hpp \
  /usr/include/boost/mpl/aux_/lambda_arity_param.hpp \
  /usr/include/boost/mpl/aux_/template_arity_fwd.hpp \
  /usr/include/boost/mpl/aux_/arity.hpp \
@@ -331,24 +356,8 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/mpl/aux_/preprocessor/params.hpp \
  /usr/include/boost/mpl/aux_/config/preprocessor.hpp \
  /usr/include/boost/preprocessor/comma_if.hpp \
- /usr/include/boost/preprocessor/punctuation/comma_if.hpp \
- /usr/include/boost/preprocessor/control/if.hpp \
- /usr/include/boost/preprocessor/control/iif.hpp \
- /usr/include/boost/preprocessor/logical/bool.hpp \
- /usr/include/boost/preprocessor/config/limits.hpp \
- /usr/include/boost/preprocessor/logical/limits/bool_256.hpp \
- /usr/include/boost/preprocessor/facilities/empty.hpp \
- /usr/include/boost/preprocessor/punctuation/comma.hpp \
  /usr/include/boost/preprocessor/repeat.hpp \
- /usr/include/boost/preprocessor/repetition/repeat.hpp \
- /usr/include/boost/preprocessor/debug/error.hpp \
- /usr/include/boost/preprocessor/detail/auto_rec.hpp \
- /usr/include/boost/preprocessor/detail/limits/auto_rec_256.hpp \
- /usr/include/boost/preprocessor/tuple/eat.hpp \
- /usr/include/boost/preprocessor/repetition/limits/repeat_256.hpp \
  /usr/include/boost/preprocessor/inc.hpp \
- /usr/include/boost/preprocessor/arithmetic/inc.hpp \
- /usr/include/boost/preprocessor/arithmetic/limits/inc_256.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/enum.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp \
  /usr/include/boost/mpl/limits/arity.hpp \
@@ -358,8 +367,6 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/preprocessor/facilities/identity.hpp \
  /usr/include/boost/preprocessor/empty.hpp \
  /usr/include/boost/preprocessor/arithmetic/add.hpp \
- /usr/include/boost/preprocessor/arithmetic/dec.hpp \
- /usr/include/boost/preprocessor/arithmetic/limits/dec_256.hpp \
  /usr/include/boost/preprocessor/control/while.hpp \
  /usr/include/boost/preprocessor/list/fold_left.hpp \
  /usr/include/boost/preprocessor/list/detail/fold_left.hpp \
@@ -368,34 +375,10 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/preprocessor/detail/is_binary.hpp \
  /usr/include/boost/preprocessor/detail/check.hpp \
  /usr/include/boost/preprocessor/logical/compl.hpp \
- /usr/include/boost/preprocessor/list/detail/limits/fold_left_256.hpp \
- /usr/include/boost/preprocessor/list/limits/fold_left_256.hpp \
  /usr/include/boost/preprocessor/list/fold_right.hpp \
  /usr/include/boost/preprocessor/list/detail/fold_right.hpp \
  /usr/include/boost/preprocessor/list/reverse.hpp \
- /usr/include/boost/preprocessor/list/detail/limits/fold_right_256.hpp \
  /usr/include/boost/preprocessor/control/detail/while.hpp \
- /usr/include/boost/preprocessor/control/detail/limits/while_256.hpp \
- /usr/include/boost/preprocessor/control/limits/while_256.hpp \
- /usr/include/boost/preprocessor/logical/bitor.hpp \
- /usr/include/boost/preprocessor/tuple/elem.hpp \
- /usr/include/boost/preprocessor/facilities/expand.hpp \
- /usr/include/boost/preprocessor/facilities/overload.hpp \
- /usr/include/boost/preprocessor/variadic/size.hpp \
- /usr/include/boost/preprocessor/facilities/check_empty.hpp \
- /usr/include/boost/preprocessor/variadic/has_opt.hpp \
- /usr/include/boost/preprocessor/variadic/limits/size_64.hpp \
- /usr/include/boost/preprocessor/tuple/rem.hpp \
- /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
- /usr/include/boost/preprocessor/variadic/elem.hpp \
- /usr/include/boost/preprocessor/variadic/limits/elem_64.hpp \
- /usr/include/boost/preprocessor/arithmetic/detail/is_maximum_number.hpp \
- /usr/include/boost/preprocessor/comparison/equal.hpp \
- /usr/include/boost/preprocessor/comparison/not_equal.hpp \
- /usr/include/boost/preprocessor/comparison/limits/not_equal_256.hpp \
- /usr/include/boost/preprocessor/arithmetic/detail/maximum_number.hpp \
- /usr/include/boost/preprocessor/arithmetic/detail/is_minimum_number.hpp \
- /usr/include/boost/preprocessor/logical/not.hpp \
  /usr/include/boost/preprocessor/arithmetic/sub.hpp \
  /usr/include/boost/mpl/aux_/config/eti.hpp \
  /usr/include/boost/mpl/aux_/config/overload_resolution.hpp \
@@ -404,11 +387,6 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/mpl/aux_/config/arrays.hpp \
  /usr/include/boost/mpl/aux_/config/has_xxx.hpp \
  /usr/include/boost/mpl/aux_/config/msvc_typename.hpp \
- /usr/include/boost/preprocessor/array/elem.hpp \
- /usr/include/boost/preprocessor/array/data.hpp \
- /usr/include/boost/preprocessor/array/size.hpp \
- /usr/include/boost/preprocessor/repetition/enum_params.hpp \
- /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
  /usr/include/boost/mpl/and.hpp \
  /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp \
  /usr/include/boost/mpl/aux_/nested_type_wknd.hpp \
@@ -428,8 +406,7 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iterator \
  /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/boost/property_tree/stream_translator.hpp \
- /usr/include/boost/optional/optional_io.hpp \
- /usr/include/boost/utility/enable_if.hpp /usr/include/c++/11/sstream \
+ /usr/include/boost/optional/optional_io.hpp /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
  /usr/include/boost/multi_index_container.hpp \
  /usr/include/boost/core/no_exceptions_support.hpp \
@@ -533,6 +510,9 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/multi_index_container_fwd.hpp \
  /usr/include/boost/multi_index/identity.hpp \
  /usr/include/boost/multi_index/identity_fwd.hpp \
+ /usr/include/boost/type_traits/is_convertible.hpp \
+ /usr/include/boost/type_traits/is_abstract.hpp \
+ /usr/include/boost/type_traits/add_lvalue_reference.hpp \
  /usr/include/boost/multi_index/indexed_by.hpp \
  /usr/include/boost/mpl/vector.hpp \
  /usr/include/boost/mpl/limits/vector.hpp \
@@ -632,9 +612,6 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/mpl/aux_/push_back_impl.hpp \
  /usr/include/boost/mpl/inserter.hpp \
  /usr/include/boost/mpl/front_inserter.hpp \
- /usr/include/boost/preprocessor/facilities/intercept.hpp \
- /usr/include/boost/preprocessor/facilities/limits/intercept_256.hpp \
- /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
  /usr/include/boost/multi_index/detail/ord_index_impl_fwd.hpp \
  /usr/include/boost/multi_index/detail/access_specifier.hpp \
  /usr/include/boost/multi_index/detail/adl_swap.hpp \
@@ -643,11 +620,11 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/multi_index/detail/base_type.hpp \
  /usr/include/boost/multi_index/detail/index_base.hpp \
  /usr/include/boost/multi_index/detail/copy_map.hpp \
- /usr/include/boost/core/noncopyable.hpp \
  /usr/include/boost/multi_index/detail/auto_space.hpp \
+ /usr/include/boost/noncopyable.hpp \
+ /usr/include/boost/core/noncopyable.hpp \
  /usr/include/boost/multi_index/detail/raw_ptr.hpp \
  /usr/include/boost/multi_index/detail/do_not_copy_elements_tag.hpp \
- /usr/include/boost/multi_index/detail/index_access_sequence.hpp \
  /usr/include/boost/multi_index/detail/node_handle.hpp \
  /usr/include/boost/type_traits/aligned_storage.hpp \
  /usr/include/boost/multi_index/detail/define_if_constexpr_macro.hpp \
@@ -660,9 +637,13 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_iter_fold_impl.hpp \
  /usr/include/boost/multi_index/detail/header_holder.hpp \
  /usr/include/boost/multi_index/detail/index_node_base.hpp \
- /usr/include/boost/core/serialization.hpp \
- /usr/include/boost/core/nvp.hpp \
- /usr/include/boost/multi_index/detail/bad_archive_exception.hpp \
+ /usr/include/boost/archive/archive_exception.hpp \
+ /usr/include/boost/archive/detail/decl.hpp \
+ /usr/include/boost/archive/detail/abi_prefix.hpp \
+ /usr/include/boost/config/abi_prefix.hpp \
+ /usr/include/boost/archive/detail/abi_suffix.hpp \
+ /usr/include/boost/config/abi_suffix.hpp \
+ /usr/include/boost/serialization/access.hpp \
  /usr/include/boost/multi_index/detail/is_index_list.hpp \
  /usr/include/boost/mpl/empty.hpp \
  /usr/include/boost/mpl/aux_/empty_impl.hpp \
@@ -678,36 +659,65 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/utility/swap.hpp \
  /usr/include/boost/multi_index/detail/index_loader.hpp \
+ /usr/include/boost/serialization/nvp.hpp /usr/include/boost/core/nvp.hpp \
+ /usr/include/boost/serialization/level.hpp \
+ /usr/include/boost/type_traits/is_fundamental.hpp \
+ /usr/include/boost/serialization/level_enum.hpp \
+ /usr/include/boost/serialization/tracking.hpp \
+ /usr/include/boost/mpl/equal_to.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp \
+ /usr/include/boost/mpl/greater.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp \
+ /usr/include/boost/serialization/tracking_enum.hpp \
+ /usr/include/boost/serialization/type_info_implementation.hpp \
+ /usr/include/boost/serialization/traits.hpp \
+ /usr/include/boost/serialization/split_free.hpp \
+ /usr/include/boost/serialization/serialization.hpp \
+ /usr/include/boost/serialization/strong_typedef.hpp \
+ /usr/include/boost/operators.hpp \
+ /usr/include/boost/type_traits/has_nothrow_copy.hpp \
+ /usr/include/boost/type_traits/is_copy_constructible.hpp \
+ /usr/include/boost/serialization/wrapper.hpp \
+ /usr/include/boost/serialization/base_object.hpp \
+ /usr/include/boost/type_traits/is_polymorphic.hpp \
+ /usr/include/boost/serialization/force_include.hpp \
+ /usr/include/boost/serialization/void_cast_fwd.hpp \
  /usr/include/boost/multi_index/detail/index_saver.hpp \
  /usr/include/boost/multi_index/detail/index_matcher.hpp \
  /usr/include/boost/multi_index/detail/converter.hpp \
  /usr/include/boost/multi_index/detail/has_tag.hpp \
- /usr/include/boost/multi_index/detail/invalidate_iterators.hpp \
  /usr/include/boost/multi_index/detail/safe_mode.hpp \
  /usr/include/boost/multi_index/detail/scope_guard.hpp \
  /usr/include/boost/utility/base_from_member.hpp \
  /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
  /usr/include/boost/multi_index/detail/archive_constructed.hpp \
  /usr/include/boost/multi_index/detail/serialization_version.hpp \
+ /usr/include/boost/serialization/split_member.hpp \
+ /usr/include/boost/serialization/version.hpp \
+ /usr/include/boost/mpl/comparison.hpp \
+ /usr/include/boost/mpl/not_equal_to.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp \
+ /usr/include/boost/mpl/less_equal.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp \
+ /usr/include/boost/mpl/greater_equal.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp \
+ /usr/include/boost/serialization/collection_size_type.hpp \
+ /usr/include/boost/serialization/is_bitwise_serializable.hpp \
  /usr/include/boost/multi_index/sequenced_index.hpp \
- /usr/include/boost/bind/bind.hpp \
- /usr/include/boost/bind/detail/requires_cxx11.hpp \
- /usr/include/boost/config/pragma_message.hpp \
+ /usr/include/boost/bind/bind.hpp /usr/include/boost/mem_fn.hpp \
  /usr/include/boost/bind/mem_fn.hpp /usr/include/boost/get_pointer.hpp \
  /usr/include/boost/config/no_tr1/memory.hpp \
  /usr/include/boost/bind/mem_fn_template.hpp \
  /usr/include/boost/bind/mem_fn_cc.hpp \
  /usr/include/boost/is_placeholder.hpp /usr/include/boost/bind/arg.hpp \
- /usr/include/boost/bind/detail/result_traits.hpp \
- /usr/include/boost/bind/std_placeholders.hpp \
- /usr/include/boost/visit_each.hpp \
- /usr/include/boost/bind/detail/is_same.hpp \
+ /usr/include/boost/visit_each.hpp /usr/include/boost/core/is_same.hpp \
  /usr/include/boost/bind/storage.hpp /usr/include/boost/bind/bind_cc.hpp \
  /usr/include/boost/bind/bind_mf_cc.hpp \
  /usr/include/boost/bind/bind_mf2_cc.hpp \
  /usr/include/boost/bind/placeholders.hpp \
  /usr/include/boost/call_traits.hpp \
  /usr/include/boost/detail/call_traits.hpp \
+ /usr/include/boost/foreach_fwd.hpp \
  /usr/include/boost/iterator/reverse_iterator.hpp \
  /usr/include/boost/iterator/iterator_adaptor.hpp \
  /usr/include/boost/core/use_default.hpp \
@@ -723,11 +733,9 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/detail/select_type.hpp \
  /usr/include/boost/iterator/detail/enable_if.hpp \
  /usr/include/boost/multi_index/detail/bidir_node_iterator.hpp \
- /usr/include/boost/operators.hpp \
  /usr/include/boost/multi_index/detail/seq_index_node.hpp \
  /usr/include/boost/multi_index/detail/seq_index_ops.hpp \
  /usr/include/boost/multi_index/sequenced_index_fwd.hpp \
- /usr/include/boost/type_traits/is_copy_constructible.hpp \
  /usr/include/boost/multi_index/ordered_index.hpp \
  /usr/include/boost/multi_index/detail/ord_index_impl.hpp \
  /usr/include/boost/multi_index/detail/modify_key_adaptor.hpp \
@@ -737,6 +745,7 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/multi_index/detail/promotes_arg.hpp \
  /usr/include/boost/multi_index/detail/is_transparent.hpp \
  /usr/include/boost/type_traits/is_final.hpp \
+ /usr/include/boost/utility/declval.hpp \
  /usr/include/boost/multi_index/detail/unbounded.hpp \
  /usr/include/boost/multi_index/detail/value_compare.hpp \
  /usr/include/boost/multi_index/detail/duplicates_iterator.hpp \
@@ -744,65 +753,37 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/property_tree/detail/ptree_implementation.hpp \
  /usr/include/boost/property_tree/ini_parser.hpp \
  /usr/include/boost/property_tree/detail/file_parser_error.hpp \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/iostream \
  /usr/include/boost/filesystem.hpp \
  /usr/include/boost/filesystem/config.hpp \
  /usr/include/boost/system/api_config.hpp \
  /usr/include/boost/filesystem/path.hpp \
- /usr/include/boost/filesystem/detail/path_traits.hpp \
- /usr/include/boost/system/error_category.hpp \
- /usr/include/boost/system/detail/error_category.hpp \
+ /usr/include/boost/filesystem/path_traits.hpp \
+ /usr/include/boost/system/error_code.hpp \
  /usr/include/boost/system/detail/config.hpp \
- /usr/include/boost/system/detail/requires_cxx11.hpp \
- /usr/include/c++/11/atomic \
- /usr/include/boost/system/detail/error_category_impl.hpp \
- /usr/include/boost/system/detail/error_condition.hpp \
+ /usr/include/boost/cerrno.hpp \
  /usr/include/boost/system/detail/generic_category.hpp \
- /usr/include/boost/system/detail/generic_category_message.hpp \
- /usr/include/boost/system/detail/enable_if.hpp \
- /usr/include/boost/system/detail/is_same.hpp \
- /usr/include/boost/system/detail/errc.hpp \
- /usr/include/boost/system/is_error_condition_enum.hpp \
- /usr/include/boost/system/detail/cerrno.hpp \
- /usr/include/boost/system/detail/append_int.hpp \
- /usr/include/boost/system/detail/snprintf.hpp \
- /usr/include/c++/11/cstdarg \
- /usr/include/boost/system/detail/error_code.hpp \
- /usr/include/boost/system/is_error_code_enum.hpp \
- /usr/include/boost/system/detail/system_category.hpp \
- /usr/include/boost/system/detail/system_category_impl.hpp \
- /usr/include/boost/system/detail/system_category_message.hpp \
- /usr/include/boost/system/detail/interop_category.hpp \
- /usr/include/boost/system/detail/std_category.hpp \
- /usr/include/boost/system/detail/std_category_impl.hpp \
- /usr/include/boost/system/detail/mutex.hpp /usr/include/c++/11/mutex \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/boost/system/detail/system_category_posix.hpp \
+ /usr/include/boost/system/detail/std_interoperability.hpp \
+ /usr/include/c++/11/mutex /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- /usr/include/boost/filesystem/detail/header.hpp \
- /usr/include/boost/config/abi_prefix.hpp \
- /usr/include/boost/filesystem/detail/footer.hpp \
- /usr/include/boost/config/abi_suffix.hpp \
+ /usr/include/boost/system/system_error.hpp /usr/include/c++/11/cassert \
  /usr/include/boost/io/quoted.hpp \
  /usr/include/boost/io/detail/buffer_fill.hpp \
  /usr/include/boost/io/detail/ostream_guard.hpp \
  /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp \
  /usr/include/boost/functional/hash_fwd.hpp \
- /usr/include/boost/type_traits/negation.hpp \
  /usr/include/boost/filesystem/exception.hpp \
- /usr/include/boost/system/error_code.hpp \
- /usr/include/boost/system/error_condition.hpp \
- /usr/include/boost/system/errc.hpp \
- /usr/include/boost/system/generic_category.hpp \
- /usr/include/boost/system/system_category.hpp \
- /usr/include/boost/system/detail/throws.hpp \
- /usr/include/boost/system/system_error.hpp \
  /usr/include/boost/smart_ptr/intrusive_ptr.hpp \
- /usr/include/boost/smart_ptr/detail/requires_cxx11.hpp \
  /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
  /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
  /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
@@ -818,7 +799,6 @@ CMakeFiles/GateServer.dir/ConfigMgr.cpp.o: \
  /usr/include/boost/detail/bitmask.hpp \
  /usr/include/boost/core/scoped_enum.hpp \
  /usr/include/boost/filesystem/operations.hpp \
- /usr/include/boost/filesystem/convenience.hpp /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/iostream
+ /usr/include/boost/filesystem/convenience.hpp \
+ /usr/include/boost/filesystem/string_file.hpp \
+ /usr/include/boost/filesystem/fstream.hpp

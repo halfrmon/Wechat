@@ -13,7 +13,7 @@ void HttpConnection::Start()
         {
             
             if(ec){
-                std::cout<<"http read err is: "<<ec.what()<<std::endl;
+                std::cout<<"http read err is: "<<ec.message()<<std::endl;
                 return ;
             }
 
@@ -54,7 +54,7 @@ void HttpConnection::HandleReq()
     }
     if(_request.method()==http::verb::post)
     {
-        bool success =  LogicSystem::GetInstance()->HandlePost(_request.target(), shared_from_this());
+        bool success =  LogicSystem::GetInstance()->HandlePost(_request.target().to_string(), shared_from_this());
         if(!success)
         {
             _response.result(http::status::not_found);
@@ -169,11 +169,11 @@ void HttpConnection::PreParseGetParam() {
     // 查找查询字符串的开始位置（即 '?' 的位置）  
     auto query_pos = uri.find('?');
     if (query_pos == std::string::npos) {
-        _get_url = uri;
+        _get_url = uri.to_string();
         return;
     }
-    _get_url = uri.substr(0, query_pos);
-    std::string query_string = uri.substr(query_pos + 1);
+    _get_url = uri.substr(0, query_pos).to_string();
+    std::string query_string = uri.substr(query_pos + 1).to_string();
     std::string key;
     std::string value;
     size_t pos = 0;

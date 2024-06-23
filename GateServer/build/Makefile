@@ -249,6 +249,54 @@ LogicSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/LogicSystem.cpp.s
 .PHONY : LogicSystem.cpp.s
 
+MysqlDao.o: MysqlDao.cpp.o
+.PHONY : MysqlDao.o
+
+# target to build an object file
+MysqlDao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cpp.o
+.PHONY : MysqlDao.cpp.o
+
+MysqlDao.i: MysqlDao.cpp.i
+.PHONY : MysqlDao.i
+
+# target to preprocess a source file
+MysqlDao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cpp.i
+.PHONY : MysqlDao.cpp.i
+
+MysqlDao.s: MysqlDao.cpp.s
+.PHONY : MysqlDao.s
+
+# target to generate assembly for a file
+MysqlDao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlDao.cpp.s
+.PHONY : MysqlDao.cpp.s
+
+MysqlMgr.o: MysqlMgr.cpp.o
+.PHONY : MysqlMgr.o
+
+# target to build an object file
+MysqlMgr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cpp.o
+.PHONY : MysqlMgr.cpp.o
+
+MysqlMgr.i: MysqlMgr.cpp.i
+.PHONY : MysqlMgr.i
+
+# target to preprocess a source file
+MysqlMgr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cpp.i
+.PHONY : MysqlMgr.cpp.i
+
+MysqlMgr.s: MysqlMgr.cpp.s
+.PHONY : MysqlMgr.s
+
+# target to generate assembly for a file
+MysqlMgr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/MysqlMgr.cpp.s
+.PHONY : MysqlMgr.cpp.s
+
 RedisMgr.o: RedisMgr.cpp.o
 .PHONY : RedisMgr.o
 
@@ -393,6 +441,12 @@ help:
 	@echo "... LogicSystem.o"
 	@echo "... LogicSystem.i"
 	@echo "... LogicSystem.s"
+	@echo "... MysqlDao.o"
+	@echo "... MysqlDao.i"
+	@echo "... MysqlDao.s"
+	@echo "... MysqlMgr.o"
+	@echo "... MysqlMgr.i"
+	@echo "... MysqlMgr.s"
 	@echo "... RedisMgr.o"
 	@echo "... RedisMgr.i"
 	@echo "... RedisMgr.s"

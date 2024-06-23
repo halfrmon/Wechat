@@ -1,4 +1,5 @@
 #include "ConfigMgr.h"
+#include <boost/filesystem.hpp>  
 
 ConfigMgr::ConfigMgr(){
     // 获取当前工作目录  

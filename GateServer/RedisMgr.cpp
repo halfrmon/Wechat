@@ -1,6 +1,11 @@
 #include "RedisMgr.h"
 #include "ConfigMgr.h"
 
+RedisMgr::~RedisMgr()
+{
+	Close();
+}
+
 
 RedisMgr::RedisMgr()
 {
@@ -74,9 +79,9 @@ bool RedisMgr::Auth(const std::string &password)
     if (connect == nullptr) {
         return false;
     }
-    auto reply = (redisReply*)redisCommand(connect, "AUTH %s", password.c_str());
+    auto reply = (redisReply*)redisCommand(connect, "PING");
     if (reply->type == REDIS_REPLY_ERROR) {
-        std::cout << "认证失败" << std::endl;
+        std::cout << "认证失败22" << std::endl;
         //执行成功 释放redisCommand执行后返回的redisReply所占用的内存
         freeReplyObject(reply);
         return false;
