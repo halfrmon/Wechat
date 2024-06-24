@@ -10,20 +10,24 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    clickedlabel.cpp \
     global.cpp \
     httpmgr.cpp \
     logindialog.cpp \
     main.cpp \
     mainwindow.cpp \
-    registerdialog.cpp
+    registerdialog.cpp \
+    timerbtn.cpp
 
 HEADERS += \
+    clickedlabel.h \
     global.h \
     httpmgr.h \
     logindialog.h \
     mainwindow.h \
     registerdialog.h \
-    singleton.h
+    singleton.h \
+    timerbtn.h
 
 FORMS += \
     logindialog.ui \
@@ -39,4 +43,14 @@ RESOURCES += \
     rc.qrc
 
 DISTFILES += \
-    config.ini
+    ../../../llfcchat-master/client/llfcchat/res/add_friend.png \
+    ../../../llfcchat-master/client/llfcchat/res/unvisible.png \
+    ../../../llfcchat-master/client/llfcchat/res/unvisible_hover.png \
+    ../../../llfcchat-master/client/llfcchat/res/visible.png \
+    ../../../llfcchat-master/client/llfcchat/res/visible_hover.png \
+    config.ini \
+    res/add_friend_hover.png \
+    res/unvisible.png \
+    res/unvisible_hover.png \
+    res/visible.png \
+    res/visible_hover.png

@@ -20,6 +20,7 @@
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "timerbtn.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -44,13 +45,15 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QLabel *pass_label;
     QLineEdit *pass_edit;
+    QLabel *pass_visible;
     QHBoxLayout *horizontalLayout_4;
     QLabel *confirm_label;
     QLineEdit *confirm_edit;
+    QLabel *confirm_visible;
     QHBoxLayout *horizontalLayout_5;
     QLabel *varify_label;
     QLineEdit *varify_edit;
-    QPushButton *get_code;
+    TimerBtn *get_code;
     QSpacerItem *verticalSpacer_3;
     QHBoxLayout *horizontalLayout_6;
     QPushButton *sure_btn;
@@ -149,6 +152,13 @@ public:
 
         horizontalLayout_3->addWidget(pass_edit);
 
+        pass_visible = new QLabel(page);
+        pass_visible->setObjectName(QString::fromUtf8("pass_visible"));
+        pass_visible->setMinimumSize(QSize(20, 20));
+        pass_visible->setMaximumSize(QSize(20, 20));
+
+        horizontalLayout_3->addWidget(pass_visible);
+
 
         verticalLayout_3->addLayout(horizontalLayout_3);
 
@@ -167,6 +177,13 @@ public:
         confirm_edit->setMaximumSize(QSize(16777215, 25));
 
         horizontalLayout_4->addWidget(confirm_edit);
+
+        confirm_visible = new QLabel(page);
+        confirm_visible->setObjectName(QString::fromUtf8("confirm_visible"));
+        confirm_visible->setMinimumSize(QSize(20, 20));
+        confirm_visible->setMaximumSize(QSize(20, 20));
+
+        horizontalLayout_4->addWidget(confirm_visible);
 
 
         verticalLayout_3->addLayout(horizontalLayout_4);
@@ -187,7 +204,7 @@ public:
 
         horizontalLayout_5->addWidget(varify_edit);
 
-        get_code = new QPushButton(page);
+        get_code = new TimerBtn(page);
         get_code->setObjectName(QString::fromUtf8("get_code"));
         get_code->setMinimumSize(QSize(0, 25));
         get_code->setMaximumSize(QSize(16777215, 25));
@@ -247,7 +264,9 @@ public:
         user_label->setText(QCoreApplication::translate("RegisterDialog", "\347\224\250\346\210\267\357\274\232", nullptr));
         email_label->setText(QCoreApplication::translate("RegisterDialog", "\351\202\256\347\256\261\357\274\232", nullptr));
         pass_label->setText(QCoreApplication::translate("RegisterDialog", "\345\257\206\347\240\201\357\274\232", nullptr));
+        pass_visible->setText(QString());
         confirm_label->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244\357\274\232", nullptr));
+        confirm_visible->setText(QString());
         varify_label->setText(QCoreApplication::translate("RegisterDialog", "\351\252\214\350\257\201\347\240\201\357\274\232", nullptr));
         get_code->setText(QCoreApplication::translate("RegisterDialog", "\350\216\267\345\217\226", nullptr));
         sure_btn->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244", nullptr));

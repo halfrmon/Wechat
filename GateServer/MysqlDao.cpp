@@ -29,7 +29,7 @@ int MysqlDao::RegUser(const std::string &name,const std::string &email,const std
             pool_->returnConnection(std::move(con));
             return false;
         }
-        std::unique_ptr<sql::PreparedStatement>stmt(con->prepareStatement("CALL_reg_user(?,?,?,@result)"));//调用存储过程
+        std::unique_ptr<sql::PreparedStatement>stmt(con->prepareStatement("CALL reg_user(?,?,?,@result)"));//调用存储过程
         //设置输入参数
         stmt->setString(1,name);
         stmt->setString(2,email);
