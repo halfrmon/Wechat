@@ -321,6 +321,30 @@ RedisMgr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/RedisMgr.cpp.s
 .PHONY : RedisMgr.cpp.s
 
+StatusGrpcClient.o: StatusGrpcClient.cpp.o
+.PHONY : StatusGrpcClient.o
+
+# target to build an object file
+StatusGrpcClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o
+.PHONY : StatusGrpcClient.cpp.o
+
+StatusGrpcClient.i: StatusGrpcClient.cpp.i
+.PHONY : StatusGrpcClient.i
+
+# target to preprocess a source file
+StatusGrpcClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i
+.PHONY : StatusGrpcClient.cpp.i
+
+StatusGrpcClient.s: StatusGrpcClient.cpp.s
+.PHONY : StatusGrpcClient.s
+
+# target to generate assembly for a file
+StatusGrpcClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GateServer.dir/build.make CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s
+.PHONY : StatusGrpcClient.cpp.s
+
 VerifyGrpcClient.o: VerifyGrpcClient.cpp.o
 .PHONY : VerifyGrpcClient.o
 
@@ -450,6 +474,9 @@ help:
 	@echo "... RedisMgr.o"
 	@echo "... RedisMgr.i"
 	@echo "... RedisMgr.s"
+	@echo "... StatusGrpcClient.o"
+	@echo "... StatusGrpcClient.i"
+	@echo "... StatusGrpcClient.s"
 	@echo "... VerifyGrpcClient.o"
 	@echo "... VerifyGrpcClient.i"
 	@echo "... VerifyGrpcClient.s"

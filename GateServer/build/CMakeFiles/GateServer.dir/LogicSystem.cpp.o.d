@@ -2244,4 +2244,5 @@ CMakeFiles/GateServer.dir/LogicSystem.cpp.o: \
  /usr/include/boost/property_tree/detail/file_parser_error.hpp \
  /home/chen/AV_Development/5.29Project/GateServer/RedisMgr.h \
  /home/chen/AV_Development/5.29Project/GateServer/MysqlMgr.h \
- /home/chen/AV_Development/5.29Project/GateServer/MysqlDao.h
+ /home/chen/AV_Development/5.29Project/GateServer/MysqlDao.h \
+ /home/chen/AV_Development/5.29Project/GateServer/StatusGrpcClient.h

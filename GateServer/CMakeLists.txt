@@ -62,6 +62,7 @@ set(SOURCES
     MysqlMgr.cpp
     MysqlDao.cpp
     HttpConnection.cpp
+    StatusGrpcClient.cpp
     ${GENERATED_PROTO_FILES}
 )
 

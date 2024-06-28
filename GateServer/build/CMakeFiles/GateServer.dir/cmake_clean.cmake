@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GateServer.dir/MysqlMgr.cpp.o.d"
   "CMakeFiles/GateServer.dir/RedisMgr.cpp.o"
   "CMakeFiles/GateServer.dir/RedisMgr.cpp.o.d"
+  "CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o"
+  "CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o.d"
   "CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o"
   "CMakeFiles/GateServer.dir/VerifyGrpcClient.cpp.o.d"
   "CMakeFiles/GateServer.dir/main.cpp.o"

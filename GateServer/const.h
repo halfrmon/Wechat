@@ -39,6 +39,25 @@ enum ErrorCodes{
 	VarifyCodeErr = 1004, //��֤�����
 	UserExist = 1005,       //�û��Ѿ�����
 	PasswdErr = 1006, 
+    EmailNotMatch =1007,
+    PasswdUpFailed=1008,
+    PasswdInvalid = 1009,
+	RPCGetFailed = 1012,
+};
+
+// Defer��
+class Defer {
+public:
+	// ����һ��lambda����ʽ���ߺ���ָ��
+	Defer(std::function<void()> func) : func_(func) {}
+
+	// ����������ִ�д���ĺ���
+	~Defer() {
+		func_();
+	}
+
+private:
+	std::function<void()> func_;
 };
 
 

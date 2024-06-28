@@ -70,12 +70,23 @@ private:
     std::atomic<bool> b_stop_;
 };
 
+struct UserInfo {
+	std::string name;
+	std::string pwd;
+	int uid;
+	std::string email;
+};
 class MysqlDao
 {
 public:
     MysqlDao();
     ~MysqlDao();
     int RegUser(const std::string& name,const std::string& email,const std::string &pwd);
+    bool CheckEmail(const std::string& name, const std::string& email);
+    
+    bool CheckPwd(const std::string& name, const std::string& pwd, UserInfo& userInfo) ;
+    
+    bool UpdatePwd(const std::string& name, const std::string& pwd);
 private:
     std::unique_ptr<MySqlPool> pool_;//mysql连接池中的一个mysql连接
 };

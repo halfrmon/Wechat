@@ -209,10 +209,24 @@ CMakeFiles/GateServer.dir/HttpConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/HttpConnection.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/HttpConnection.cpp -o CMakeFiles/GateServer.dir/HttpConnection.cpp.s
 
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o: CMakeFiles/GateServer.dir/flags.make
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o: ../StatusGrpcClient.cpp
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o: CMakeFiles/GateServer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o -MF CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o.d -o CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/StatusGrpcClient.cpp
+
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chen/AV_Development/5.29Project/GateServer/StatusGrpcClient.cpp > CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.i
+
+CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chen/AV_Development/5.29Project/GateServer/StatusGrpcClient.cpp -o CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.s
+
 CMakeFiles/GateServer.dir/message.pb.cc.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/message.pb.cc.o: ../message.pb.cc
 CMakeFiles/GateServer.dir/message.pb.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GateServer.dir/message.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GateServer.dir/message.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.pb.cc.o -MF CMakeFiles/GateServer.dir/message.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.pb.cc.o -c /home/chen/AV_Development/5.29Project/GateServer/message.pb.cc
 
 CMakeFiles/GateServer.dir/message.pb.cc.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/GateServer.dir/message.pb.cc.s: cmake_force
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: CMakeFiles/GateServer.dir/flags.make
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: ../message.grpc.pb.cc
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.o: CMakeFiles/GateServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -MF CMakeFiles/GateServer.dir/message.grpc.pb.cc.o.d -o CMakeFiles/GateServer.dir/message.grpc.pb.cc.o -c /home/chen/AV_Development/5.29Project/GateServer/message.grpc.pb.cc
 
 CMakeFiles/GateServer.dir/message.grpc.pb.cc.i: cmake_force
@@ -249,6 +263,7 @@ GateServer_OBJECTS = \
 "CMakeFiles/GateServer.dir/MysqlMgr.cpp.o" \
 "CMakeFiles/GateServer.dir/MysqlDao.cpp.o" \
 "CMakeFiles/GateServer.dir/HttpConnection.cpp.o" \
+"CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o" \
 "CMakeFiles/GateServer.dir/message.pb.cc.o" \
 "CMakeFiles/GateServer.dir/message.grpc.pb.cc.o"
 
@@ -265,6 +280,7 @@ GateServer: CMakeFiles/GateServer.dir/RedisMgr.cpp.o
 GateServer: CMakeFiles/GateServer.dir/MysqlMgr.cpp.o
 GateServer: CMakeFiles/GateServer.dir/MysqlDao.cpp.o
 GateServer: CMakeFiles/GateServer.dir/HttpConnection.cpp.o
+GateServer: CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o
 GateServer: CMakeFiles/GateServer.dir/message.pb.cc.o
 GateServer: CMakeFiles/GateServer.dir/message.grpc.pb.cc.o
 GateServer: CMakeFiles/GateServer.dir/build.make
@@ -292,7 +308,7 @@ GateServer: /usr/lib/libabsl_raw_logging_internal.so
 GateServer: /usr/lib/libabsl_log_severity.so
 GateServer: /usr/lib/libupb.so.9.0.0
 GateServer: CMakeFiles/GateServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable GateServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chen/AV_Development/5.29Project/GateServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable GateServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GateServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

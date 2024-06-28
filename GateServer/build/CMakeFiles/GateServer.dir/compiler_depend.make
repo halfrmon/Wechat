@@ -8529,7 +8529,8 @@ CMakeFiles/GateServer.dir/LogicSystem.cpp.o: ../LogicSystem.cpp \
   /usr/include/boost/property_tree/detail/file_parser_error.hpp \
   ../RedisMgr.h \
   ../MysqlMgr.h \
-  ../MysqlDao.h
+  ../MysqlDao.h \
+  ../StatusGrpcClient.h
 
 CMakeFiles/GateServer.dir/MysqlDao.cpp.o: ../MysqlDao.cpp \
   /usr/include/stdc-predef.h \
@@ -20391,6 +20392,8 @@ CMakeFiles/GateServer.dir/message.pb.cc.o: ../message.pb.cc \
 ../RedisMgr.cpp:
 
 ../MysqlDao.cpp:
+
+../StatusGrpcClient.h:
 
 ../MysqlMgr.h:
 

@@ -20,6 +20,7 @@
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "clickedlabel.h"
 #include "timerbtn.h"
 
 QT_BEGIN_NAMESPACE
@@ -45,11 +46,11 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QLabel *pass_label;
     QLineEdit *pass_edit;
-    QLabel *pass_visible;
+    ClickedLabel *pass_visible;
     QHBoxLayout *horizontalLayout_4;
     QLabel *confirm_label;
     QLineEdit *confirm_edit;
-    QLabel *confirm_visible;
+    ClickedLabel *confirm_visible;
     QHBoxLayout *horizontalLayout_5;
     QLabel *varify_label;
     QLineEdit *varify_edit;
@@ -60,6 +61,16 @@ public:
     QPushButton *pushButton_2;
     QSpacerItem *verticalSpacer_2;
     QWidget *page_2;
+    QVBoxLayout *verticalLayout_5;
+    QSpacerItem *verticalSpacer_6;
+    QLabel *tip_lb;
+    QSpacerItem *verticalSpacer_4;
+    QWidget *widget_2;
+    QHBoxLayout *horizontalLayout_7;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *return_btn;
+    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *verticalSpacer_5;
 
     void setupUi(QDialog *RegisterDialog)
     {
@@ -152,7 +163,7 @@ public:
 
         horizontalLayout_3->addWidget(pass_edit);
 
-        pass_visible = new QLabel(page);
+        pass_visible = new ClickedLabel(page);
         pass_visible->setObjectName(QString::fromUtf8("pass_visible"));
         pass_visible->setMinimumSize(QSize(20, 20));
         pass_visible->setMaximumSize(QSize(20, 20));
@@ -178,7 +189,7 @@ public:
 
         horizontalLayout_4->addWidget(confirm_edit);
 
-        confirm_visible = new QLabel(page);
+        confirm_visible = new ClickedLabel(page);
         confirm_visible->setObjectName(QString::fromUtf8("confirm_visible"));
         confirm_visible->setMinimumSize(QSize(20, 20));
         confirm_visible->setMaximumSize(QSize(20, 20));
@@ -244,6 +255,49 @@ public:
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName(QString::fromUtf8("page_2"));
+        verticalLayout_5 = new QVBoxLayout(page_2);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        verticalSpacer_6 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_5->addItem(verticalSpacer_6);
+
+        tip_lb = new QLabel(page_2);
+        tip_lb->setObjectName(QString::fromUtf8("tip_lb"));
+        tip_lb->setLayoutDirection(Qt::LeftToRight);
+        tip_lb->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_5->addWidget(tip_lb);
+
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_5->addItem(verticalSpacer_4);
+
+        widget_2 = new QWidget(page_2);
+        widget_2->setObjectName(QString::fromUtf8("widget_2"));
+        horizontalLayout_7 = new QHBoxLayout(widget_2);
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_7->addItem(horizontalSpacer);
+
+        return_btn = new QPushButton(widget_2);
+        return_btn->setObjectName(QString::fromUtf8("return_btn"));
+        return_btn->setMinimumSize(QSize(0, 25));
+        return_btn->setMaximumSize(QSize(16777215, 25));
+
+        horizontalLayout_7->addWidget(return_btn);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_7->addItem(horizontalSpacer_2);
+
+
+        verticalLayout_5->addWidget(widget_2);
+
+        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_5->addItem(verticalSpacer_5);
+
         stackedWidget->addWidget(page_2);
 
         verticalLayout->addWidget(stackedWidget);
@@ -253,6 +307,9 @@ public:
 
 
         retranslateUi(RegisterDialog);
+
+        stackedWidget->setCurrentIndex(0);
+
 
         QMetaObject::connectSlotsByName(RegisterDialog);
     } // setupUi
@@ -271,6 +328,8 @@ public:
         get_code->setText(QCoreApplication::translate("RegisterDialog", "\350\216\267\345\217\226", nullptr));
         sure_btn->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244", nullptr));
         pushButton_2->setText(QCoreApplication::translate("RegisterDialog", "\345\217\226\346\266\210", nullptr));
+        tip_lb->setText(QCoreApplication::translate("RegisterDialog", "\346\263\250\345\206\214\346\210\220\345\212\237\357\274\2145s\345\220\216\350\277\224\345\233\236\347\231\273\351\231\206", nullptr));
+        return_btn->setText(QCoreApplication::translate("RegisterDialog", "\350\277\224\345\233\236\347\231\273\345\275\225", nullptr));
     } // retranslateUi
 
 };

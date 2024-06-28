@@ -51,6 +51,11 @@
 },
 {
   "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/StatusGrpcClient.cpp.o -c /home/chen/AV_Development/5.29Project/GateServer/StatusGrpcClient.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/GateServer/StatusGrpcClient.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/GateServer/build",
   "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/GateServer -g -std=gnu++11 -o CMakeFiles/GateServer.dir/message.pb.cc.o -c /home/chen/AV_Development/5.29Project/GateServer/message.pb.cc",
   "file": "/home/chen/AV_Development/5.29Project/GateServer/message.pb.cc"
 },

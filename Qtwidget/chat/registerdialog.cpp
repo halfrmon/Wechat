@@ -5,7 +5,7 @@
 
 RegisterDialog::RegisterDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::RegisterDialog)
+    ui(new Ui::RegisterDialog),_countdown(5)
 {
     ui->setupUi(this);
     ui->pass_edit->setEchoMode(QLineEdit::Password);
@@ -37,6 +37,40 @@ RegisterDialog::RegisterDialog(QWidget *parent) :
     });
     ui->pass_visible->setCursor(Qt::PointingHandCursor);
     ui->confirm_visible->setCursor(Qt::PointingHandCursor);
+    ui->pass_visible->SetState("unvisible","unvisible_hover","","visible",
+                                "visible_hover","");
+    ui->confirm_visible->SetState("unvisible","unvisible_hover","","visible",
+                                    "visible_hover","");
+    connect(ui->pass_visible, &ClickedLabel::clicked, this, [this]() {
+        auto state = ui->pass_visible->GetCurState();
+        if(state == ClickLbState::Normal){
+            ui->pass_edit->setEchoMode(QLineEdit::Password);
+        }else{
+                ui->pass_edit->setEchoMode(QLineEdit::Normal);
+        }
+        qDebug() << "Label was clicked!";
+    });
+    connect(ui->confirm_visible, &ClickedLabel::clicked, this, [this]() {
+        auto state = ui->confirm_visible->GetCurState();
+        if(state == ClickLbState::Normal){
+            ui->confirm_edit->setEchoMode(QLineEdit::Password);
+        }else{
+                ui->confirm_edit->setEchoMode(QLineEdit::Normal);
+        }
+        qDebug() << "Label was clicked!";
+    });
+    _countdown_timer = new QTimer(this);
+    connect(_countdown_timer,&QTimer::timeout,[this](){
+        if(_countdown==0){
+            _countdown_timer->stop();
+            emit sigSwitchLogin();
+            return;
+        }
+        _countdown--;
+        auto str = QString("注册成功，%1s后返回登陆").arg(_countdown);
+        ui->tip_lb->setText(str);
+    });
+
 
 }
 
@@ -125,6 +159,7 @@ void RegisterDialog::initHttpHandles()
         auto email = jsonObj["email"].toString();
         showTip(tr("用户注册成功"), true);
         qDebug()<< "email is " << email ;
+        ChangeTipPage();
     });
 }
 
@@ -218,6 +253,14 @@ bool RegisterDialog::checkVarifyValid()
     return true;
 }
 
+void RegisterDialog::ChangeTipPage()
+{
+   _countdown_timer->stop();
+   ui->stackedWidget->setCurrentWidget(ui->page_2);
+
+   _countdown_timer->start(1000);
+}
+
 
 void RegisterDialog::on_sure_btn_clicked()
 {
@@ -252,5 +295,19 @@ void RegisterDialog::on_sure_btn_clicked()
     HttpMgr::GetInstance()->PostHttpReq(QUrl(gate_url_prefix+"/user_register"),
                  json_obj, ReqId::ID_REG_USER,Modules::REGISTERMOD);
 
+}
+
+
+void RegisterDialog::on_return_btn_clicked()
+{
+    _countdown_timer->stop();
+    emit sigSwitchLogin();
+}
+
+
+void RegisterDialog::on_pushButton_2_clicked()
+{
+    _countdown_timer->stop();
+    emit sigSwitchLogin();
 }
 

@@ -25,9 +25,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
      <property name="leftMargin">
       <number>5</number>
      </property>
@@ -41,29 +41,56 @@
       <number>5</number>
      </property>
      <item>
-      <spacer name="verticalSpacer">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
+      <widget class="QLabel" name="err_tip">
+       <property name="minimumSize">
         <size>
-         <width>20</width>
-         <height>40</height>
+         <width>0</width>
+         <height>25</height>
         </size>
        </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QLabel" name="label">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>25</height>
+        </size>
+       </property>
        <property name="text">
         <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap resource="rc.qrc">:/res/ice.png</pixmap>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="head_widget" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>230</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QLabel" name="ead_label">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </item>
      <item>
@@ -80,9 +107,9 @@
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLabel" name="user_edit">
+        <widget class="QLabel" name="email_lb">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -96,12 +123,12 @@
           </size>
          </property>
          <property name="text">
-          <string>用户：</string>
+          <string>邮箱：</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="user_label">
+        <widget class="QLineEdit" name="email_edit">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -116,10 +143,26 @@
          </property>
         </widget>
        </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>25</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
         <widget class="QLabel" name="pass_label">
          <property name="minimumSize">
@@ -155,10 +198,26 @@
          </property>
         </widget>
        </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>25</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <spacer name="horizontalSpacer">
          <property name="orientation">
@@ -173,24 +232,9 @@
         </spacer>
        </item>
        <item>
-        <widget class="QLabel" name="forget_label">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>25</height>
-          </size>
-         </property>
+        <widget class="ClickedLabel" name="forget_label">
          <property name="text">
           <string>忘记密码</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::AutoText</enum>
          </property>
         </widget>
        </item>
@@ -210,7 +254,7 @@
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
         <spacer name="horizontalSpacer_2">
          <property name="orientation">
@@ -228,12 +272,12 @@
         <widget class="QPushButton" name="login_btn">
          <property name="minimumSize">
           <size>
-           <width>80</width>
+           <width>100</width>
            <height>30</height>
           </size>
          </property>
          <property name="text">
-          <string>登陆</string>
+          <string>登录</string>
          </property>
         </widget>
        </item>
@@ -253,7 +297,7 @@
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
        <item>
         <spacer name="horizontalSpacer_4">
          <property name="orientation">
@@ -271,7 +315,7 @@
         <widget class="QPushButton" name="reg_btn">
          <property name="minimumSize">
           <size>
-           <width>80</width>
+           <width>100</width>
            <height>30</height>
           </size>
          </property>
@@ -296,16 +340,29 @@
       </layout>
      </item>
      <item>
-      <widget class="QWidget" name="widget" native="true">
-       <layout class="QGridLayout" name="gridLayout"/>
-      </widget>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
      </item>
     </layout>
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="rc.qrc"/>
- </resources>
+ <customwidgets>
+  <customwidget>
+   <class>ClickedLabel</class>
+   <extends>QLabel</extends>
+   <header>clickedlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
  <connections/>
 </ui>

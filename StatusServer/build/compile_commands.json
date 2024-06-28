@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/StatusServer.cpp.o -c /home/chen/AV_Development/5.29Project/StatusServer/StatusServer.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/StatusServer.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/ConfigMgr.cpp.o -c /home/chen/AV_Development/5.29Project/StatusServer/ConfigMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/ConfigMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/AsioIOServicePool.cpp.o -c /home/chen/AV_Development/5.29Project/StatusServer/AsioIOServicePool.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/AsioIOServicePool.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/RedisMgr.cpp.o -c /home/chen/AV_Development/5.29Project/StatusServer/RedisMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/RedisMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/MysqlMgr.cpp.o -c /home/chen/AV_Development/5.29Project/StatusServer/MysqlMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/MysqlMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/MysqlDao.cpp.o -c /home/chen/AV_Development/5.29Project/StatusServer/MysqlDao.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/MysqlDao.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/StatusServiceImpl.cpp.o -c /home/chen/AV_Development/5.29Project/StatusServer/StatusServiceImpl.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/StatusServiceImpl.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/message.pb.cc.o -c /home/chen/AV_Development/5.29Project/StatusServer/message.pb.cc",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/message.pb.cc"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/StatusServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/StatusServer -g -std=gnu++11 -o CMakeFiles/StatusServer.dir/message.grpc.pb.cc.o -c /home/chen/AV_Development/5.29Project/StatusServer/message.grpc.pb.cc",
+  "file": "/home/chen/AV_Development/5.29Project/StatusServer/message.grpc.pb.cc"
+}
+]
