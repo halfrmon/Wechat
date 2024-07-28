@@ -60,6 +60,7 @@ SOURCES       = ../chat/clickedlabel.cpp \
 		../chat/mainwindow.cpp \
 		../chat/registerdialog.cpp \
 		../chat/resetdialog.cpp \
+		../chat/tcpmgr.cpp \
 		../chat/timerbtn.cpp qrc_rc.cpp \
 		moc_clickedlabel.cpp \
 		moc_httpmgr.cpp \
@@ -75,6 +76,7 @@ OBJECTS       = clickedlabel.o \
 		mainwindow.o \
 		registerdialog.o \
 		resetdialog.o \
+		tcpmgr.o \
 		timerbtn.o \
 		qrc_rc.o \
 		moc_clickedlabel.o \
@@ -180,6 +182,7 @@ DIST          = ../../../llfcchat-master/client/llfcchat/res/add_friend.png \
 		../chat/registerdialog.h \
 		../chat/resetdialog.h \
 		../chat/singleton.h \
+		../chat/tcpmgr.h \
 		../chat/timerbtn.h ../chat/clickedlabel.cpp \
 		../chat/global.cpp \
 		../chat/httpmgr.cpp \
@@ -188,6 +191,7 @@ DIST          = ../../../llfcchat-master/client/llfcchat/res/add_friend.png \
 		../chat/mainwindow.cpp \
 		../chat/registerdialog.cpp \
 		../chat/resetdialog.cpp \
+		../chat/tcpmgr.cpp \
 		../chat/timerbtn.cpp
 QMAKE_TARGET  = chat
 DESTDIR       = 
@@ -377,8 +381,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../chat/rc.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../chat/clickedlabel.h ../chat/global.h ../chat/httpmgr.h ../chat/logindialog.h ../chat/mainwindow.h ../chat/registerdialog.h ../chat/resetdialog.h ../chat/singleton.h ../chat/timerbtn.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../chat/clickedlabel.cpp ../chat/global.cpp ../chat/httpmgr.cpp ../chat/logindialog.cpp ../chat/main.cpp ../chat/mainwindow.cpp ../chat/registerdialog.cpp ../chat/resetdialog.cpp ../chat/timerbtn.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../chat/clickedlabel.h ../chat/global.h ../chat/httpmgr.h ../chat/logindialog.h ../chat/mainwindow.h ../chat/registerdialog.h ../chat/resetdialog.h ../chat/singleton.h ../chat/tcpmgr.h ../chat/timerbtn.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../chat/clickedlabel.cpp ../chat/global.cpp ../chat/httpmgr.cpp ../chat/logindialog.cpp ../chat/main.cpp ../chat/mainwindow.cpp ../chat/registerdialog.cpp ../chat/resetdialog.cpp ../chat/tcpmgr.cpp ../chat/timerbtn.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../chat/logindialog.ui ../chat/mainwindow.ui ../chat/registerdialog.ui ../chat/resetdialog.ui $(DISTDIR)/
 
 
@@ -469,14 +473,15 @@ moc_httpmgr.cpp: ../chat/httpmgr.h \
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/chen/AV_Development/5.29Project/Qtwidget/build-chat-unknown-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/chen/AV_Development/5.29Project/Qtwidget/chat -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../chat/httpmgr.h -o moc_httpmgr.cpp
 
 moc_logindialog.cpp: ../chat/logindialog.h \
+		../chat/global.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/chen/AV_Development/5.29Project/Qtwidget/build-chat-unknown-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/chen/AV_Development/5.29Project/Qtwidget/chat -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../chat/logindialog.h -o moc_logindialog.cpp
 
 moc_mainwindow.cpp: ../chat/mainwindow.h \
 		../chat/logindialog.h \
-		../chat/registerdialog.h \
 		../chat/global.h \
+		../chat/registerdialog.h \
 		../chat/resetdialog.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -546,22 +551,24 @@ httpmgr.o: ../chat/httpmgr.cpp ../chat/httpmgr.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o httpmgr.o ../chat/httpmgr.cpp
 
 logindialog.o: ../chat/logindialog.cpp ../chat/logindialog.h \
+		../chat/global.h \
 		ui_logindialog.h \
 		../chat/clickedlabel.h \
-		../chat/global.h
+		../chat/httpmgr.h \
+		../chat/singleton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o logindialog.o ../chat/logindialog.cpp
 
 main.o: ../chat/main.cpp ../chat/mainwindow.h \
 		../chat/logindialog.h \
-		../chat/registerdialog.h \
 		../chat/global.h \
+		../chat/registerdialog.h \
 		../chat/resetdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../chat/main.cpp
 
 mainwindow.o: ../chat/mainwindow.cpp ../chat/mainwindow.h \
 		../chat/logindialog.h \
-		../chat/registerdialog.h \
 		../chat/global.h \
+		../chat/registerdialog.h \
 		../chat/resetdialog.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../chat/mainwindow.cpp
@@ -582,6 +589,9 @@ resetdialog.o: ../chat/resetdialog.cpp ../chat/resetdialog.h \
 		../chat/httpmgr.h \
 		../chat/singleton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o resetdialog.o ../chat/resetdialog.cpp
+
+tcpmgr.o: ../chat/tcpmgr.cpp ../chat/tcpmgr.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o tcpmgr.o ../chat/tcpmgr.cpp
 
 timerbtn.o: ../chat/timerbtn.cpp ../chat/timerbtn.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o timerbtn.o ../chat/timerbtn.cpp

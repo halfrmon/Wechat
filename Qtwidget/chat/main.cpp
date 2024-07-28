@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     {
         qDebug("open success");
         QString style = QLatin1String(qss.readAll());
-        a.setStyleSheet(style);
+        a.setStyleSheet(style);//根据读取到的qss文件来设置款式
         qss.close();
     }else{
         qDebug("Opne failed");
