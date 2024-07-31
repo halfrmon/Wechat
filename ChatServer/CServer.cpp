@@ -1,5 +1,5 @@
 #include "CServer.h"
-#include "HttpConnection.h"
+
 
 #include "AsioIOServicePool.h"
 
@@ -8,6 +8,9 @@ CServer::CServer(boost::asio::io_context& io_context, short port):_io_context(io
 {
     std::cout<<"Server start success,listen on port"<<std::endl;
     StartAccept();
+}
+CServer::~CServer(){
+
 }
 void CServer::StartAccept() {
     auto &io_context = AsioIOServicePool::GetInstance()->GetIOService();
@@ -20,10 +23,14 @@ void CServer::HandleAccept(shared_ptr<CSession>new_session,const boost::system::
     if(!error){
         new_session->Start();
         lock_guard<mutex> lock(_mutex);
-        _sessions.insert(make_pair(new_session->GetUuid(),new_session));
+        _sessions.insert(make_pair(new_session->Getuuid(),new_session));
     }
     else{
         std::cout<<"session accept failed,error is : "<<error.value()<<std::endl;
     }
     StartAccept();
+}
+void CServer::ClearSession(std::string _uuid){
+    std::lock_guard<std::mutex> lock(_mutex);
+    _sessions.erase(_uuid);
 }

@@ -15,26 +15,30 @@ class LoginDialog : public QDialog
 public:
     explicit LoginDialog(QWidget *parent = nullptr);
     ~LoginDialog();
-    void showTip(QString str,bool b_ok);
-
 private:
-    Ui::LoginDialog *ui;
     void initHead();
-    bool checkUserVaild();
-    bool checkPwdVaild();
     void initHttpHandlers();
-
-public slots:
+    void showTip(QString str,bool b_ok);
+    bool checkUserValid();
+    bool checkPwdValid();
+    Ui::LoginDialog *ui;
+    QMap<ReqId, std::function<void(const QJsonObject&)>> _handlers;
+    bool enableBtn(bool);
+    QMap<TipErr, QString> _tip_errs;
+    void AddTipErr(TipErr te,QString tips);
+    void DelTipErr(TipErr te);
+    int _uid;
+    QString _token;
+private slots:
     void slot_forget_pwd();
+    void on_login_btn_clicked();
     void slot_login_mod_finish(ReqId id, QString res, ErrorCodes err);
+    void slot_tcp_con_finish(bool bsuccess);
+    void slot_login_failed(int);
 signals:
     void switchRegister();
     void switchReset();
-private slots:
-    void on_login_btn_clicked();
-
-private:
-    QMap<ReqId,std::function<void(const QJsonObject&)>> _handlers;
+    void sig_connect_tcp(ServerInfo);
 };
 
 #endif // LOGINDIALOG_H

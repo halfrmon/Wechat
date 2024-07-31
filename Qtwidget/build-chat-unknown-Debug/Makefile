@@ -61,13 +61,16 @@ SOURCES       = ../chat/clickedlabel.cpp \
 		../chat/registerdialog.cpp \
 		../chat/resetdialog.cpp \
 		../chat/tcpmgr.cpp \
-		../chat/timerbtn.cpp qrc_rc.cpp \
+		../chat/timerbtn.cpp \
+		../chat/usermgr.cpp qrc_rc.cpp \
 		moc_clickedlabel.cpp \
 		moc_httpmgr.cpp \
 		moc_logindialog.cpp \
 		moc_mainwindow.cpp \
 		moc_registerdialog.cpp \
-		moc_resetdialog.cpp
+		moc_resetdialog.cpp \
+		moc_tcpmgr.cpp \
+		moc_usermgr.cpp
 OBJECTS       = clickedlabel.o \
 		global.o \
 		httpmgr.o \
@@ -78,13 +81,16 @@ OBJECTS       = clickedlabel.o \
 		resetdialog.o \
 		tcpmgr.o \
 		timerbtn.o \
+		usermgr.o \
 		qrc_rc.o \
 		moc_clickedlabel.o \
 		moc_httpmgr.o \
 		moc_logindialog.o \
 		moc_mainwindow.o \
 		moc_registerdialog.o \
-		moc_resetdialog.o
+		moc_resetdialog.o \
+		moc_tcpmgr.o \
+		moc_usermgr.o
 DIST          = ../../../llfcchat-master/client/llfcchat/res/add_friend.png \
 		../../../llfcchat-master/client/llfcchat/res/unvisible.png \
 		../../../llfcchat-master/client/llfcchat/res/unvisible_hover.png \
@@ -183,7 +189,8 @@ DIST          = ../../../llfcchat-master/client/llfcchat/res/add_friend.png \
 		../chat/resetdialog.h \
 		../chat/singleton.h \
 		../chat/tcpmgr.h \
-		../chat/timerbtn.h ../chat/clickedlabel.cpp \
+		../chat/timerbtn.h \
+		../chat/usermgr.h ../chat/clickedlabel.cpp \
 		../chat/global.cpp \
 		../chat/httpmgr.cpp \
 		../chat/logindialog.cpp \
@@ -192,7 +199,8 @@ DIST          = ../../../llfcchat-master/client/llfcchat/res/add_friend.png \
 		../chat/registerdialog.cpp \
 		../chat/resetdialog.cpp \
 		../chat/tcpmgr.cpp \
-		../chat/timerbtn.cpp
+		../chat/timerbtn.cpp \
+		../chat/usermgr.cpp
 QMAKE_TARGET  = chat
 DESTDIR       = 
 TARGET        = chat
@@ -381,8 +389,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../chat/rc.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../chat/clickedlabel.h ../chat/global.h ../chat/httpmgr.h ../chat/logindialog.h ../chat/mainwindow.h ../chat/registerdialog.h ../chat/resetdialog.h ../chat/singleton.h ../chat/tcpmgr.h ../chat/timerbtn.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../chat/clickedlabel.cpp ../chat/global.cpp ../chat/httpmgr.cpp ../chat/logindialog.cpp ../chat/main.cpp ../chat/mainwindow.cpp ../chat/registerdialog.cpp ../chat/resetdialog.cpp ../chat/tcpmgr.cpp ../chat/timerbtn.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../chat/clickedlabel.h ../chat/global.h ../chat/httpmgr.h ../chat/logindialog.h ../chat/mainwindow.h ../chat/registerdialog.h ../chat/resetdialog.h ../chat/singleton.h ../chat/tcpmgr.h ../chat/timerbtn.h ../chat/usermgr.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../chat/clickedlabel.cpp ../chat/global.cpp ../chat/httpmgr.cpp ../chat/logindialog.cpp ../chat/main.cpp ../chat/mainwindow.cpp ../chat/registerdialog.cpp ../chat/resetdialog.cpp ../chat/tcpmgr.cpp ../chat/timerbtn.cpp ../chat/usermgr.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../chat/logindialog.ui ../chat/mainwindow.ui ../chat/registerdialog.ui ../chat/resetdialog.ui $(DISTDIR)/
 
 
@@ -456,9 +464,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 	g++ -pipe -g -std=gnu++11 -Wall -Wextra -dM -E -o moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_clickedlabel.cpp moc_httpmgr.cpp moc_logindialog.cpp moc_mainwindow.cpp moc_registerdialog.cpp moc_resetdialog.cpp
+compiler_moc_header_make_all: moc_clickedlabel.cpp moc_httpmgr.cpp moc_logindialog.cpp moc_mainwindow.cpp moc_registerdialog.cpp moc_resetdialog.cpp moc_tcpmgr.cpp moc_usermgr.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_clickedlabel.cpp moc_httpmgr.cpp moc_logindialog.cpp moc_mainwindow.cpp moc_registerdialog.cpp moc_resetdialog.cpp
+	-$(DEL_FILE) moc_clickedlabel.cpp moc_httpmgr.cpp moc_logindialog.cpp moc_mainwindow.cpp moc_registerdialog.cpp moc_resetdialog.cpp moc_tcpmgr.cpp moc_usermgr.cpp
 moc_clickedlabel.cpp: ../chat/clickedlabel.h \
 		../chat/global.h \
 		moc_predefs.h \
@@ -498,6 +506,20 @@ moc_resetdialog.cpp: ../chat/resetdialog.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/chen/AV_Development/5.29Project/Qtwidget/build-chat-unknown-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/chen/AV_Development/5.29Project/Qtwidget/chat -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../chat/resetdialog.h -o moc_resetdialog.cpp
+
+moc_tcpmgr.cpp: ../chat/tcpmgr.h \
+		../chat/singleton.h \
+		../chat/global.h \
+		moc_predefs.h \
+		/usr/lib/qt5/bin/moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/chen/AV_Development/5.29Project/Qtwidget/build-chat-unknown-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/chen/AV_Development/5.29Project/Qtwidget/chat -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../chat/tcpmgr.h -o moc_tcpmgr.cpp
+
+moc_usermgr.cpp: ../chat/usermgr.h \
+		../chat/singleton.h \
+		../chat/global.h \
+		moc_predefs.h \
+		/usr/lib/qt5/bin/moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/chen/AV_Development/5.29Project/Qtwidget/build-chat-unknown-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/chen/AV_Development/5.29Project/Qtwidget/chat -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtNetwork -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -I/usr/include/c++/11/backward -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../chat/usermgr.h -o moc_usermgr.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -555,7 +577,8 @@ logindialog.o: ../chat/logindialog.cpp ../chat/logindialog.h \
 		ui_logindialog.h \
 		../chat/clickedlabel.h \
 		../chat/httpmgr.h \
-		../chat/singleton.h
+		../chat/singleton.h \
+		../chat/tcpmgr.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o logindialog.o ../chat/logindialog.cpp
 
 main.o: ../chat/main.cpp ../chat/mainwindow.h \
@@ -590,11 +613,19 @@ resetdialog.o: ../chat/resetdialog.cpp ../chat/resetdialog.h \
 		../chat/singleton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o resetdialog.o ../chat/resetdialog.cpp
 
-tcpmgr.o: ../chat/tcpmgr.cpp ../chat/tcpmgr.h
+tcpmgr.o: ../chat/tcpmgr.cpp ../chat/tcpmgr.h \
+		../chat/singleton.h \
+		../chat/global.h \
+		../chat/usermgr.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o tcpmgr.o ../chat/tcpmgr.cpp
 
 timerbtn.o: ../chat/timerbtn.cpp ../chat/timerbtn.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o timerbtn.o ../chat/timerbtn.cpp
+
+usermgr.o: ../chat/usermgr.cpp ../chat/usermgr.h \
+		../chat/singleton.h \
+		../chat/global.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o usermgr.o ../chat/usermgr.cpp
 
 qrc_rc.o: qrc_rc.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_rc.o qrc_rc.cpp
@@ -616,6 +647,12 @@ moc_registerdialog.o: moc_registerdialog.cpp
 
 moc_resetdialog.o: moc_resetdialog.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_resetdialog.o moc_resetdialog.cpp
+
+moc_tcpmgr.o: moc_tcpmgr.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_tcpmgr.o moc_tcpmgr.cpp
+
+moc_usermgr.o: moc_usermgr.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_usermgr.o moc_usermgr.cpp
 
 ####### Install
 

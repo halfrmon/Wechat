@@ -218,3 +218,7 @@ void CSession::Send(std::string msg,short msgid){
 std::shared_ptr<CSession>CSession::SharedSelf() {
 	return shared_from_this();
 }
+LogicNode::LogicNode(shared_ptr<CSession>  session, 
+	shared_ptr<RecvNode> recvnode):_session(session),_recvnode(recvnode) {
+	
+}

@@ -42,6 +42,8 @@ enum ErrorCodes{
     EmailNotMatch =1007,
     PasswdUpFailed=1008,
     PasswdInvalid = 1009,
+	TokenInvalid = 1010,   //TokenʧЧ
+	UidInvalid = 1011,  
 	RPCGetFailed = 1012,
 };
 
@@ -74,6 +76,10 @@ private:
 #define HEAD_DATA_LEN 2
 #define MAX_RECVQUE  10000
 #define MAX_SENDQUE 1000
+enum MSG_IDS {
+	MSG_CHAT_LOGIN = 1005, //�û���½
+	MSG_CHAT_LOGIN_RSP = 1006, //�û���½�ذ�
+};
 
 
 #define CODEPREFIX  "code_"

@@ -2,7 +2,7 @@
 #include <boost/asio.hpp>
 #include "const.h"
 #include "MsgNode.h"
-#include "LogicSystem.h"
+
 
 using namespace std;
 namespace beast = boost::beast;         // from <boost/beast.hpp>

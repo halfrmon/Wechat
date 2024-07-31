@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_HttpMgr_t {
     QByteArrayData data[14];
-    char stringdata0[144];
+    char stringdata0[143];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -44,14 +44,14 @@ QT_MOC_LITERAL(8, 53, 7), // "Modules"
 QT_MOC_LITERAL(9, 61, 3), // "mod"
 QT_MOC_LITERAL(10, 65, 18), // "sig_reg_mod_finish"
 QT_MOC_LITERAL(11, 84, 20), // "sig_reset_mod_finish"
-QT_MOC_LITERAL(12, 105, 21), // "sig_login_mode_finish"
-QT_MOC_LITERAL(13, 127, 16) // "slot_http_finish"
+QT_MOC_LITERAL(12, 105, 20), // "sig_login_mod_finish"
+QT_MOC_LITERAL(13, 126, 16) // "slot_http_finish"
 
     },
     "HttpMgr\0sig_http_finish\0\0ReqId\0id\0res\0"
     "ErrorCodes\0err\0Modules\0mod\0"
     "sig_reg_mod_finish\0sig_reset_mod_finish\0"
-    "sig_login_mode_finish\0slot_http_finish"
+    "sig_login_mod_finish\0slot_http_finish"
 };
 #undef QT_MOC_LITERAL
 
@@ -98,7 +98,7 @@ void HttpMgr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         case 0: _t->sig_http_finish((*reinterpret_cast< ReqId(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< ErrorCodes(*)>(_a[3])),(*reinterpret_cast< Modules(*)>(_a[4]))); break;
         case 1: _t->sig_reg_mod_finish((*reinterpret_cast< ReqId(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< ErrorCodes(*)>(_a[3]))); break;
         case 2: _t->sig_reset_mod_finish((*reinterpret_cast< ReqId(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< ErrorCodes(*)>(_a[3]))); break;
-        case 3: _t->sig_login_mode_finish((*reinterpret_cast< ReqId(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< ErrorCodes(*)>(_a[3]))); break;
+        case 3: _t->sig_login_mod_finish((*reinterpret_cast< ReqId(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< ErrorCodes(*)>(_a[3]))); break;
         case 4: _t->slot_http_finish((*reinterpret_cast< ReqId(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< ErrorCodes(*)>(_a[3])),(*reinterpret_cast< Modules(*)>(_a[4]))); break;
         default: ;
         }
@@ -127,7 +127,7 @@ void HttpMgr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         }
         {
             using _t = void (HttpMgr::*)(ReqId , QString , ErrorCodes );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&HttpMgr::sig_login_mode_finish)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&HttpMgr::sig_login_mod_finish)) {
                 *result = 3;
                 return;
             }
@@ -201,7 +201,7 @@ void HttpMgr::sig_reset_mod_finish(ReqId _t1, QString _t2, ErrorCodes _t3)
 }
 
 // SIGNAL 3
-void HttpMgr::sig_login_mode_finish(ReqId _t1, QString _t2, ErrorCodes _t3)
+void HttpMgr::sig_login_mod_finish(ReqId _t1, QString _t2, ErrorCodes _t3)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);

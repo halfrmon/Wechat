@@ -195,11 +195,12 @@ RegPost("/user_login", [](std::shared_ptr<HttpConnection> connection) {
         beast::ostream(connection->_response.body()) << jsonstr;
         return true;
     }
-    auto name = src_root["user"].asString();
+    auto name = src_root["email"].asString();
     auto pwd = src_root["passwd"].asString();
     UserInfo userInfo;
     //查询数据库判断用户名和密码是否匹配
     bool pwd_valid = MysqlMgr::GetInstance()->CheckPwd(name, pwd, userInfo);
+    std::cout<<"________________"<<pwd_valid<<std::endl;
     if (!pwd_valid) {
         std::cout << " user pwd not match" << std::endl;
         root["error"] = ErrorCodes::PasswdInvalid;
@@ -217,11 +218,13 @@ RegPost("/user_login", [](std::shared_ptr<HttpConnection> connection) {
         return true;
     }
     std::cout << "succeed to load userinfo uid is " << userInfo.uid << std::endl;
+    std::cout << "succeed to reply port is " << reply.port() << std::endl;
     root["error"] = 0;
-    root["user"] = name;
+    root["email"] = name;
     root["uid"] = userInfo.uid;
     root["token"] = reply.token();
     root["host"] = reply.host();
+    root["port"] = reply.port();
     std::string jsonstr = root.toStyledString();
     beast::ostream(connection->_response.body()) << jsonstr;
     return true;

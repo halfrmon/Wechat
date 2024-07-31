@@ -1,0 +1,67 @@
+[
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/main.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/main.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/CSession.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/CSession.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/CSession.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/MsgNode.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/MsgNode.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/MsgNode.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/LogicSystem.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/LogicSystem.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/LogicSystem.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/ConfigMgr.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/ConfigMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/ConfigMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/CServer.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/CServer.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/CServer.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/AsioIOServicePool.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/AsioIOServicePool.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/AsioIOServicePool.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/RedisMgr.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/RedisMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/RedisMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/MysqlMgr.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/MysqlMgr.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/MysqlMgr.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/MysqlDao.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/MysqlDao.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/MysqlDao.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/StatusGrpcClient.cpp.o -c /home/chen/AV_Development/5.29Project/ChatServer/StatusGrpcClient.cpp",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/StatusGrpcClient.cpp"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/message.pb.cc.o -c /home/chen/AV_Development/5.29Project/ChatServer/message.pb.cc",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/message.pb.cc"
+},
+{
+  "directory": "/home/chen/AV_Development/5.29Project/ChatServer/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DCARES_STATICLIB -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/usr/include/json -I/usr/include/hiredis -I/usr/include/mysql -I/usr/include/cppconn -I/home/chen/AV_Development/5.29Project/ChatServer -g -o CMakeFiles/ChatServer.dir/message.grpc.pb.cc.o -c /home/chen/AV_Development/5.29Project/ChatServer/message.grpc.pb.cc",
+  "file": "/home/chen/AV_Development/5.29Project/ChatServer/message.grpc.pb.cc"
+}
+]

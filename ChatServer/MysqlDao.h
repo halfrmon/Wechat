@@ -1,5 +1,5 @@
 #include "const.h"
-
+#include "data.h"
 
 class SqlConnection {
 public:
@@ -70,12 +70,7 @@ private:
     std::atomic<bool> b_stop_;
 };
 
-struct UserInfo {
-	std::string name;
-	std::string pwd;
-	int uid;
-	std::string email;
-};
+
 class MysqlDao
 {
 public:
@@ -87,6 +82,7 @@ public:
     bool CheckPwd(const std::string& name, const std::string& pwd, UserInfo& userInfo) ;
     
     bool UpdatePwd(const std::string& name, const std::string& pwd);
+    std::shared_ptr<UserInfo> GetUser(int uid);
 private:
     std::unique_ptr<MySqlPool> pool_;//mysql连接池中的一个mysql连接
 };
